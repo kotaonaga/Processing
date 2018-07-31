@@ -1,0 +1,14 @@
+void setup(){
+}
+
+void draw() {
+    float p1, p2, p3, p4;
+    p1 = random(width);
+        p2 = random(width);
+        p3 = random(width);
+        p4 = random(width);
+        line(p1, p2, p3, p4);
+    //for (int i = 0; i < 5; i++) {
+     
+    //}
+}
