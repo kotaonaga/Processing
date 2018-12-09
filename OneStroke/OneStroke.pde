@@ -3,7 +3,7 @@ void setup(){
 }
 
 void draw(){
-  background(0, 15, 30);
+  background(0, 9, 30);
   
   translate(width/2, height/2, 0);
   rotateX(frameCount*0.01);
@@ -22,7 +22,8 @@ void draw(){
     float y = radius * sin(radianS) * sin(radianT);
     float z = radius * cos(radianS);
     
-    stroke(69, 220, 218);
+    //stroke(69, 220, 218);
+    stroke(#FFFFFF);
     if(lastX != 0){
       strokeWeight(1);
       // 現在の座標から一つ前の座標に線を引く
@@ -40,4 +41,8 @@ void draw(){
     s++;
     t+=75;
   }
+}
+
+void mousePressed(){
+  saveFrame("image/img.jpg");
 }

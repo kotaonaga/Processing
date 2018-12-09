@@ -18,7 +18,7 @@ void draw() {
       float pd1, pd2;
       pd1 = random(width);
       pd2 = random(height);
-      strokeWeight(random(5, 7));
+      strokeWeight(random(5, 13));
       stroke(random(0, 255), random(0, 255), random(0, 255));
       point(pd1, pd2);
     }

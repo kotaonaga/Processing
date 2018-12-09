@@ -1,27 +1,15 @@
-int deg=0;
-void setup(){
-  size(400,300);
-  strokeWeight(10);
-}
+//pushMatrix(); //(0, 0)を原点とする座標軸をスタックに格納
+//translate(40, 30); // 座標軸を 右に40px, 下に30px移動
+//rect(0, 0, 30, 20);
+//popMatrix(); //座標軸の位置をスタックから取り出すし設定する ... この場合(0, 0)
+//fill(20, 80, 100);
+//pushMatrix();
+//translate(100, 100);
+////rect(0, 0, 30, 20);
+//popMatrix();
+//rect(0,0,40, 50);
+translate(50, 50);
+pushMatrix();
 
-void draw(){
- background(200,200,200);
-  
-//赤い線を書く処理
- stroke(255,0,0);
- pushMatrix();  //通常の座標を保存
- translate(width/4,height/2);  //座標変換処理。赤い線の中心を原点にする
- rotate(deg*PI/180);  //座標回転処理。上記で変換した原点を中心に、座標を回転する
- line(0,0,width,0);  //座標を回転した状態で線をかく
- popMatrix();  //通常の座標に戻す
-
-//緑の線を書く処理
- stroke(0,255,0);
- pushMatrix();  //通常の座標を保存
- translate(3*width/4,height/2);  //座標変換処理。緑の線の中心を原点にする
- rotate(deg*PI/180);  //座標回転処理。上記で変換した原点を中心に、座標を回転する
- line(0,0,width,0);//座標を回転した状態で線をかく
- popMatrix();  //通常の座標に戻す
-
- deg++;
-}
+popMatrix();
+rect(0,0, 20, 20);
